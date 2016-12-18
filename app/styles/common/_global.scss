@@ -1,0 +1,138 @@
+body {
+  font-family: 'Cuprum-Regular';
+}
+
+.center-container {
+  max-width: 780px;
+  margin: 0 auto;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+// Font Styles//
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: $xxlarge;
+  margin: 0;
+  @media (min-width: $screen-xs-min) {
+  font-size: $xxxlarge;
+  }
+}
+
+.capitol-gray {
+  color: $medium-gray;
+  text-transform: uppercase;
+}
+
+.white {
+  color: white;
+}
+
+.underline-blue {
+  border-bottom: 2px solid $dark-blue;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+// Image Positioning
+
+.big-logo {
+  margin: 20px auto;
+  width: 175px;
+  left: 50%;
+}
+
+.fixed-logo {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+}
+
+
+// Layout
+.white-section {
+  background-color: white;
+  padding: 10px 5px;
+  position: relative;
+  z-index: 1;
+  @media (min-width: $screen-xs-min) {
+  padding: 50px 0;
+  }
+}
+
+header {
+  margin-top: 50px;
+  @media (min-width: $screen-xs-min) {
+    margin-top: 80px;
+  }
+  @media (min-width: $screen-sm-min) {
+    height: 400px;
+    margin-top: 100px;
+  }
+}
+
+.center-res-right {
+  text-align: center;
+  @media (min-width: $screen-sm-min){
+    text-align: right;
+  }
+}
+
+.dotted {
+  background: url("../../images/dots2.png");
+  height: 14px;
+  margin: 20px 0 30px 0;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+section {
+  width: 100%;
+}
+
+footer {
+  background: #666;
+  color: white;
+  height: 300px;
+  position: relative;
+  z-index: 5;
+}
+
+// Random
+#header-img, #header-content {
+  opacity: 0;
+}
+
+
+
+//Solo z-index
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-2 {
+  z-index: 2;
+}
+
+.z-3 {
+  z-index: 3;
+}
