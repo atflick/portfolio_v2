@@ -1,22 +1,13 @@
 .services-header {
-  background: url("../../images/services-bg.jpg") no-repeat fixed;
+  background: linear-gradient(
+          rgba(0, 119, 255, 0.4),
+          rgba(240, 240, 240, 0.3)
+        ),
+        url("../../images/services-bg.jpg") no-repeat fixed;
   background-size: auto 300px;
-  height: 300px;
-  padding: 50px 5px;
   @media (min-width: $screen-xs-min) {
     background-position: center;
     background-size: cover;
-    height: 400px;
-    padding: 100px 5px;
-  }
-  h1 {
-    color: white;
-    font-size: $xxxxlarge;
-    text-align: center;
-    text-shadow: 1px 1px 5px gray;
-    @media (min-width: $screen-xs-min) {
-      font-size: $xxxxxxlarge;
-    }
   }
 }
 

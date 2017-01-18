@@ -87,5 +87,3 @@ var faderOne  = new Waypoint({
   },
   offset: '75%'
 });
-
-Paralax attempt

@@ -76,13 +76,30 @@ h2 {
 }
 
 header {
+  position: relative;
+  height: 300px;
   margin-top: 50px;
+  padding: 50px 5px;
   @media (min-width: $screen-xs-min) {
+    background-position: center;
+    background-size: cover;
+    height: 400px;
     margin-top: 80px;
+    padding: 100px 5px;
   }
   @media (min-width: $screen-sm-min) {
     height: 400px;
     margin-top: 100px;
+  }
+  h1 {
+    color: white;
+    font-size: $xxxxlarge;
+    padding: 0;
+    text-align: center;
+    text-shadow: 1px 1px 5px gray;
+    @media (min-width: $screen-xs-min) {
+      font-size: $xxxxxxlarge;
+    }
   }
 }
 
@@ -121,7 +138,15 @@ footer {
   opacity: 0;
 }
 
-
+.pg-header {
+  // background-color: rgba(250,250,250,.9);
+  color: white;
+  font-size: $xxxxlarge;
+  text-align: center;
+  @media (min-width: $screen-xs-min) {
+    font-size: $xxxxxxlarge;
+  }
+}
 
 //Solo z-index
 
@@ -135,4 +160,40 @@ footer {
 
 .z-3 {
   z-index: 3;
+}
+
+// Blinking Arrow
+
+.arrow-border {
+  position: relative;
+  top: 99%;
+  -webkit-transform: translateY(-95%);
+  -ms-transform: translateY(-95%);
+  transform: translateY(-95%);
+  border: 2px solid white;
+  height: 40px;
+  padding: 0px 3px 0px 3px;
+  margin: 0 auto;
+  width: 55px;
+  animation: 6s blink infinite;
+}
+
+.arrow {
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  height: 30px;
+  width: 30px;
+  margin: 0 auto;
+  position: relative;
+  top: -5px;
+  transform: rotate(45deg);
+  animation: 6s blink infinite;
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  25% { opacity: 0; }
+  50% { opacity: 1; }
+  75% { opacity: 0; }
+  100% { opacity: 1; }
 }
